@@ -9,8 +9,7 @@ import 'package:triventiz/services/create_event_controller.dart';
 import 'package:triventiz/services/created_events_controller.dart';
 
 class ApiClient {
-  String userBaseUrl =
-      "https://jc2yevcbge.execute-api.eu-north-1.amazonaws.com"; //base url
+  String userBaseUrl = ""; //base url
   Future<Map<String, dynamic>> makePostRequest(
       {required String endPoint,
       required Map<String, dynamic> body,
@@ -191,9 +190,7 @@ class ApiClient {
 }
 
 class EventApiClient {
-  String eventBaseUrl =
-      //"https://syasf93cr4.execute-api.eu-north-1.amazonaws.com"; //base url
-      "https://udt357wt87.execute-api.eu-north-1.amazonaws.com"; //base url
+  String eventBaseUrl = ""; //base url
 
   Future<Map<String, dynamic>> makePostRequest(
       {required String endPoint,
@@ -366,8 +363,7 @@ class EventApiClient {
 }
 
 class NotificationApiClient {
-  String notificationBaseUrl =
-      "https://qtjwlorqq9.execute-api.eu-north-1.amazonaws.com"; //base url
+  String notificationBaseUrl = ""; //base url
 
   Future<Map<String, dynamic>> makePostRequest(
       {required String endPoint,
@@ -505,9 +501,7 @@ class NotificationApiClient {
 }
 
 class PaymentApiClient {
-  String paymentBaseUrl =
-      //"https://op4c2elbdk.execute-api.eu-north-1.amazonaws.com"; //base url
-      "https://15n8envs6e.execute-api.eu-north-1.amazonaws.com"; //base url
+  String paymentBaseUrl = ""; //base url
   Future<Map<String, dynamic>> makePostRequest(
       {required String endPoint,
         required Map<String, dynamic> body,

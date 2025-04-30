@@ -1,0 +1,93 @@
+mac@macs-MacBook-Pro triventiz % keytool -genkey -v -keystore ~/triv-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias trivkeystore
+The operation couldn’t be completed. Unable to locate a Java Runtime.
+Please visit http://www.java.com for information on installing Java.
+
+mac@macs-MacBook-Pro triventiz % flutter doctor -v
+[✓] Flutter (Channel stable, 3.24.1, on macOS 13.6.9 22G830 darwin-x64, locale en-US)
+    • Flutter version 3.24.1 on channel stable at /Users/mac/development/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 5874a72aa4 (8 months ago), 2024-08-20 16:46:00 -0500
+    • Engine revision c9b9d5780d
+    • Dart version 3.5.1
+    • DevTools version 2.37.2
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 35.0.0)
+    • Android SDK at /Users/mac/Library/Android/sdk
+    • Platform android-35, build-tools 35.0.0
+    • Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0-17.0.11b1207.24-11852314)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 15.2)
+    • Xcode at /Users/mac/Downloads/Xcode.app/Contents/Developer
+    • Build 15C500b
+    • CocoaPods version 1.15.2
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 2024.1)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0-17.0.11b1207.24-11852314)
+
+[✓] Connected device (3 available)
+    • Sidney’s iPhone (mobile) • 00008110-000C45A022C3801E • ios            • iOS 18.2 22C152
+    • macOS (desktop)          • macos                     • darwin-x64     • macOS 13.6.9 22G830 darwin-x64
+    • Chrome (web)             • chrome                    • web-javascript • Google Chrome 134.0.6998.166
+
+[✓] Network resources
+    • All expected network resources are available.
+
+• No issues found!
+mac@macs-MacBook-Pro triventiz % cd "/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin"
+mac@macs-MacBook-Pro bin % keytool -genkey -v -keystore ~/triv-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias trivkeystore
+The operation couldn’t be completed. Unable to locate a Java Runtime.
+Please visit http://www.java.com for information on installing Java.
+
+mac@macs-MacBook-Pro bin % keytool -genkey -v -keystore ~/triv-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias trivkeystore
+The operation couldn’t be completed. Unable to locate a Java Runtime.
+Please visit http://www.java.com for information on installing Java.
+
+mac@macs-MacBook-Pro bin % java -version
+The operation couldn’t be completed. Unable to locate a Java Runtime.
+Please visit http://www.java.com for information on installing Java.
+
+mac@macs-MacBook-Pro bin % "/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/keytool" -genkey -v -keystore ~/triv-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias trivkeystore
+Enter keystore password:
+Re-enter new password:
+They don't match. Try again
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  casmir
+What is the name of your organizational unit?
+  [Unknown]:  triventiz
+What is the name of your organization?
+  [Unknown]:  triventiz
+What is the name of your City or Locality?
+  [Unknown]:  london
+What is the name of your State or Province?
+  [Unknown]:  uk
+What is the two-letter country code for this unit?
+  [Unknown]:  uk
+Is CN=casmir, OU=triventiz, O=triventiz, L=london, ST=uk, C=uk correct?
+  [no]:  yes
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=casmir, OU=triventiz, O=triventiz, L=london, ST=uk, C=uk
+[Storing /Users/mac/triv-keystore.jks]
+mac@macs-MacBook-Pro bin %
+
+
+
+
+
+
+//GENERATE KEEYSTORE
+ "/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/keytool" -genkey -v -keystore ~/triv-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias trivkeystore
+//GET. SHA1
+"/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/keytool" -list -v -keystore triv-keystore.jks

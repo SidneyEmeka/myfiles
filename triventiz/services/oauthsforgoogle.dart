@@ -21,7 +21,7 @@ class Oauthsforgoogle extends GetxController{
       'email',
       'profile',
     ],
-    serverClientId: '186672512859-c7u3387jl3hd30gdcolkfr2kckntlomb.apps.googleusercontent.com' //web client
+    serverClientId: "webclient id" //web client
   );
   // Store user info
   var _token = "";
